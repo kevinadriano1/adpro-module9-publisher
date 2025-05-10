@@ -6,3 +6,6 @@ The URL amqp://guest:guest@localhost:5672 is used to connect to the RabbitMQ ser
 
 ## Running RabbitMQ as message broker.
 <img src="img/ss1.png">
+
+## Sending and processing event
+<img src="img/ss2.png">

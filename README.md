@@ -9,3 +9,9 @@ The URL amqp://guest:guest@localhost:5672 is used to connect to the RabbitMQ ser
 
 ## Sending and processing event
 <img src="img/ss2.png">
+
+## Monitoring chart based on publisher.
+<img src="img/ss3.png">
+
+When we run the publisher program, it sends messages to RabbitMQ. This causes a spike in the message rate graph in the RabbitMQ dashboard. The spike shows how many messages were published to the broker per second. Even though the queue shows 0 messages, it’s likely that a consumer immediately processed them, so the queue didn't accumulate. The purple line in the graph represents message acknowledgments (acks), meaning the consumer confirmed receiving them. This confirms that the message flow is working between the publisher and the RabbitMQ broker.
+

@@ -10,6 +10,8 @@ The URL amqp://guest:guest@localhost:5672 is used to connect to the RabbitMQ ser
 ## Sending and processing event
 <img src="img/ss2.png">
 
+After running the subscriber, a connection is established with the RabbitMQ message broker, which is visible in the management console. This confirms that the subscriber is actively listening for messages. When the publisher is executed using cargo run, it sends five messages to the message broker. Each message is then picked up and processed by the subscriber in real-time. On the subscriber console, we can see each message printed as it arrives, demonstrating successful communication between publisher and subscriber. This interaction validates the working message queue system using RabbitMQ and Rust for event-driven communication.
+
 ## Monitoring chart based on publisher.
 <img src="img/ss3.png">
 
